@@ -6,4 +6,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
+  site: "https://BIGtanukiudon.github.io",
+  base: "/activity-pulse-logger-page",
 });
