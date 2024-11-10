@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Introduction from "../components/Introduction.astro";
+import PrivacyPolicy from "../components/PrivacyPolicy.astro";
+import { APP_NAME } from "../common";
+
+const h1Class = "text-6xl font-bold";
+const h2Class = "text-4xl font-bold";
+---
+
+<Layout title=`Introduction of ${APP_NAME}`>
+  <main class="flex flex-col items-center text-lg p-10">
+    <div class="flex flex-col gap-10">
+      <h1 class={h1Class}>{APP_NAME}</h1>
+
+      <div class="flex flex-col gap-5">
+        <h2 class={h2Class}>Introduction</h2>
+
+        <Introduction />
+      </div>
+
+      <div class="flex flex-col gap-5">
+        <h2 class={h2Class}>Privacy Policy</h2>
+
+        <PrivacyPolicy />
+      </div>
+    </div>
+  </main>
+</Layout>

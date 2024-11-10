@@ -1,0 +1,52 @@
+---
+import { Picture } from "astro:assets";
+
+import { APP_NAME } from "../common";
+import TopImage from "../images/top.png";
+import AddDialogImage from "../images/add-dialog.png";
+import DetailImage from "../images/detail.png";
+---
+
+<div class="flex flex-col gap-3">
+  <div class="flex flex-row gap-5 max-w-1/2">
+    <Picture src={TopImage} alt="Top" />
+    <Picture src={AddDialogImage} alt="Add Dialog" />
+    <Picture src={DetailImage} alt="Detail" />
+  </div>
+
+  <div>
+    <p>
+      {APP_NAME} is a desktop app that makes it easy to log your daily activities.
+    </p>
+    <p>
+      Just enter the date, activity, and any notes, and you’ll quickly capture
+      what you did that day.
+    </p>
+    <p>
+      This app is useful in a wide range of situations, from keeping track of
+      daily moments to recording progress at work.
+    </p>
+  </div>
+
+  <div>
+    Use Cases:
+
+    <ul class="list-disc list-inside">
+      <li>
+        Personal Notes: Remember where you went with friends or how you spent
+        your free time, perfect for tracking personal memories.
+      </li>
+
+      <li>
+        Work Activity Log: Record daily tasks and work progress to review later.
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <p>
+      With its simple interface, Activity Pulse Logger supports you in keeping a
+      clear record of your activities.
+    </p>
+  </div>
+</div>
